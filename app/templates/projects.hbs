@@ -1,0 +1,13 @@
+
+
+
+<div class="bady1">
+<h2>Current Projects</h2>
+  {{#each project in model}}
+    {{#link-to 'project' project}}
+      <h1>{{project.title}}</h1>
+    {{/link-to}}
+  {{/each}}
+</div>g
+<br>
+{{outlet}}
